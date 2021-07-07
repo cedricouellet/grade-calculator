@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Final Grade Calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cedric-Antoine Ouellet" />
+    <meta name="description" content="A required final grade calculator" />
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <title>cedricao - Grade Calculator</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Cedric-Antoine Ouellet">
-    <link rel="icon" href="logo.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <h1 id="title">Required Final Grade Calculator</h1>
+  <body>
     <form>
-        <div>
-            <label>Current Grade</label>
-            <br>
-            <input type="text" id="current-grade">
-        </div>
+      <h1 id="title">Final Grade Calculator</h1>
 
-        <div>
-            <label>Final Exam Weight</label>
-            <br>
-            <input type="text" id="exam-weight">
-        </div>
+      <div class="item">
+        <label>Current Grade</label>
+        <br />
+        <input autocomplete="off" type="text" id="current-grade" />
+      </div>
 
-        <div>
-            <label>Final Grade Goal</label>
-            <br>
-            <input type="text" id="wanted-grade">
-        </div>
+      <div class="item">
+        <label>Final Exam Weight</label>
+        <br />
+        <input autocomplete="off" type="text" id="exam-weight" />
+      </div>
 
-        <button id="btn-calculate" type="button">Calculate</button>
-        <h2 id="required">Required: ?</h2>
+      <div class="item">
+        <label>Final Grade Goal</label>
+        <br />
+        <input autocomplete="off" type="text" id="wanted-grade" />
+      </div>
+
+      <button id="btn-calculate" type="button">Calculate</button>
+      <h2 id="required">Required: ?</h2>
     </form>
 
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
